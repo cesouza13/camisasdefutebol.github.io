@@ -1,0 +1,54 @@
+<style>
+    /* Reset de estilos padrão */
+    nav ul, nav li, nav a {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    /* Estilos do menu de navegação */
+    nav ul {
+        background-color: #f2f2f2;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 0 10px;
+    }
+
+    nav a {
+        color: #333;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #ff0000;
+    }
+</style>
+
+.menu-list {
+    display: none; /* Oculta a lista de menu por padrão */
+  }
+  
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  .menu-toggle.open {
+    display: none; /* Oculta o botão quando o menu estiver aberto */
+  }
+  
+  .menu-list.open {
+    display: block; /* Exibe o menu quando o botão for clicado */
+  }
+  

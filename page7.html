@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <style>
+    body {
+      background-color: salmon;
+    }
+  </style>
+      
+      
+          <title>Pesquisa de Produtos</title>
+          <style>
+            table {
+              border-collapse: collapse;
+              width: 100%;
+            }
+            th, td {
+              padding: 8px;
+              border: 1px solid black;
+          }
+        </style>
+        <style>
+          .menu {
+            background-color: #f8f8f8;
+            padding: 10px;
+          }
+        
+          .menu-toggle {
+            background: none;
+            border: none;
+            font-size: 20px;
+            color: #000;
+            cursor: pointer;
+          }
+        
+          .menu-list {
+            display: none;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          }
+        
+          .menu-list.open {
+            display: block;
+          }
+        
+          .menu-list li {
+            margin-bottom: 10px;
+          }
+        
+          .menu-list li a {
+            color: #000;
+            text-decoration: none;
+          }
+        
+          .menu-list li a:hover {
+            text-decoration: underline;
+          }
+        </style> 
+</head>
+<body>
+  <header>
+    <nav class="menu">
+      <button class="menu-toggle" onclick="toggleMenu()">
+        &#9776; <!-- Usando o Unicode para o ícone do hamburguer -->
+      </button>
+      <ul class="menu-list">
+        <li><a href="page7.html">pesquisa de produtos</a></li>
+        <li><a href="page2.html">pagina de cadastro</a></li>
+        <li><a href="Autor.html">sobre</a></li>
+        <li><a href="layouts2.html">segundo layouts</a></li>
+      </ul>
+    </nav>
+    <script>
+      function toggleMenu() {
+        var menuList = document.querySelector('.menu-list');
+        menuList.classList.toggle('open');
+      }
+    </script>
+  </header>
+    <a href="layouts.html"> <h3>Pagina inicial</h3></a> 
+    <h1>Pesquisa de Produtos</h1>
+  <table>
+        <tr>
+            <th>Nome</th>
+            <th>Preço</th>
+            <th>Descrição</th>
+        </tr>
+    <tr>
+        <td><a href="page4.html">camisa do ceara</a></td>
+        <td>120.00</td>
+        <td>Camisa Tailandesa</td>
+    </tr>
+    <tr>
+        <td><a href="page5.html">camisa do flamengo</a></td>
+        <td>120.00</td>
+        <td>Camisa Tailandesa</td>
+    </tr>
+        <tr>
+            <td><a href="page6.html">camisa do são paulo</a></td>
+            <td>120.00</td>
+            <td>Camisa Tailandesa</td>
+        </tr>
+    <!-- Adicione mais linhas conforme necessário -->
+  </table>
+       
+</body>
+</html> 

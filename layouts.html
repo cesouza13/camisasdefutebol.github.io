@@ -1,0 +1,202 @@
+<DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="estilo.css">
+
+<style>
+  body {
+  background-color: salmon;
+}
+</style>
+    
+<style>
+        
+.same-size-image {
+  width: 200px;
+  height: 200px;
+}
+</style>
+  <style>img {
+              height: 250px;
+}
+</style>
+<style>
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f2f2f2;
+      padding: 10px;
+      z-index: 999;
+    }
+  
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+  
+    li {
+      margin: 0 10px;
+    }
+  
+    a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px 10px;
+    }
+  
+    a:hover {
+      background-color: #ddd;
+    }
+  
+    body {
+      padding-top: 50px; /* Altura do menu */
+    }
+</style>
+ <style>
+    /* Estilos do rodapé */
+    footer {
+      height: 50px; /* Altura desejada do rodapé */
+      /* Outras propriedades de estilo do rodapé */
+    }
+</style>
+<style>
+    .content {
+        min-height: 100vh;
+        padding-bottom: px; /* Altura do rodapé */
+    }
+    
+    /* Estilos do rodapé */
+    footer {
+        background-color: yellow;
+        padding: 20px;
+        position: static;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+  }
+</style>
+<style>.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Media query para ajustar o layout em telas menores */
+  @media (max-width: 768px) {
+    .tema {
+      width: 100%; /* Altera para largura total para empilhar os objetos */
+      /* Outros estilos adicionais conforme necessário para a exibição em telas menores */
+    }
+  }
+</style>
+<style>
+  .menu-list.open {
+    display: block; /* Exibe o menu quando a classe .open está presente */
+}
+</style>
+<style>
+  .menu-list {
+    display: none;
+  }
+
+  .menu:hover .menu-list {
+    display: block;
+}
+</style>
+<style>
+  /* Estilos para o menu de navegação */
+  .menu {
+    display: block;
+  }
+  
+  /* Oculta o menu de navegação no leiaute de impressão */
+  @media print {
+    .menu {
+      display: none;
+    }
+  }
+</style>
+<style>.menu-toggle {
+  font-size: 30px; /* Defina o tamanho da fonte desejado */
+}
+</style>
+</head>
+<title>Área de Administração - Login</title>
+</head>
+
+<body>
+        <header>
+          <nav class="menu">
+            <button class="menu-toggle" onclick="toggleMenu()">
+              &#9776; <!-- Usando o Unicode para o ícone do hamburguer -->
+            </button>
+            <ul class="menu-list">
+              <li><a href="page7.html">pesquisa de produtos</a></li>
+              <li><a href="page2.html">pagina de cadastro</a></li>
+              <li><a href="Autor.html">sobre</a></li>
+              <li><a href="layouts2.html">segundo layouts</a></li>
+            </ul>
+          </nav>
+          <script>
+            function toggleMenu() {
+              var menuList = document.querySelector('.menu-list');
+              menuList.classList.toggle('open');
+            }
+          </script>
+        </header>
+    <header>
+      <nav class="menu">
+        <!-- conteúdo do menu de navegação -->
+      </nav>
+    </header>
+        <header>
+            <h1>CARLOS FOOTBALL CLUB</h1>
+
+        </header>
+        <img src="imagens/logo loja.png">
+        
+
+    <h2>Página de Login</h2>
+    <form>
+        <label for="username">Usuário:</label>
+        <input type="text" id="username" name="username"><br>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password"><br>
+
+        <input type="submit" value="Login">
+        <button type="reset">excluir</button>
+        <a href="#" class="forgot-password-link">Esqueceu a senha?</a>
+        
+        <a href="page2.html">Cadastre-se</a>
+    </form>
+</div>
+<div class="container">
+  <a href="page4.html" class="item">
+    <img src="imagens/ceara.png" alt="Imagem de Exemplo">
+    <h1>Camisa do Ceará</h1>
+  </a>
+  <a href="page5.html" class="item">
+    <img src="imagens/flamengo.png" alt="Imagem de Exemplo">
+    <h1>Camisa do Flamengo</h1>
+  </a>
+  <a href="page6.html" class="item">
+    <img src="imagens/sp.png" alt="Imagem de Exemplo">
+    <h1>Camisa do São Paulo</h1>
+  </a>
+</div>
+        <footer>
+            <p>Autor: CARLOS EDUARDO SOUZA MARTINS</p>
+                <a href="Autor.html">Sobre o Autor</a>
+        </footer>
+        <div class="conteudo">
+            <!-- Conteúdo do site -->
+        </div>
+           
+</body>
+
+</html>
